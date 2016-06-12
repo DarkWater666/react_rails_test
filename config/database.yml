@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: utf-8
+  pool: 5
+  username: dawrkwater
+  password: 25293
+
+development:
+  <<: *default
+  database: react_rails
+
+production:
+  <<: *default
+  database: react_rails
+  host: react_rails
